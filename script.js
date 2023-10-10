@@ -26,6 +26,7 @@ const checkWin = ()=>{
     ]
     wins.forEach(e =>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
+            music.play();
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             isgameover = true
             music.pause();
